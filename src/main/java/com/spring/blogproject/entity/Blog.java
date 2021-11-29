@@ -22,7 +22,6 @@ public class Blog {
     private UUID id;
     private String title;
     private String image;
-    //    @Column(columnDefinition = "text")
     private String text;
     private Date date;
     @ManyToOne

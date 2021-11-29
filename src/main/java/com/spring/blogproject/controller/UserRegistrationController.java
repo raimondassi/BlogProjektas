@@ -37,7 +37,6 @@ public class UserRegistrationController {
 
     @PostMapping("/create")
     public String createUser(@Valid UserRegistration userRegistration, BindingResult bindingResult) {
-        //  userRegistrationValidator.validate(userRegistration, bindingResult);
         if (bindingResult.hasErrors()) {
             LOG.warn("user cannot be created {}", userRegistration);
             return "userRegistration";

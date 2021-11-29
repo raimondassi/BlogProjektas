@@ -35,8 +35,8 @@
                    th:classappend="${#fields.hasErrors('password')} ? 'is-invalid' : (${userRegistration.password ne null} ? 'is-valid' : '')"
                    th:field="*{password}"
                    type="password">
-            <span class="invalid-feedback" th:errors="*{password}" th:if="${#fields.hasErrors('password')}"></span>
-            <!--            <span class="invalid-feedback" th:errors="*{global}" th:if="${#fields.hasErrors('global')}"></span>-->
+            <span class="invalid-feedback" th:errors="*{password}"
+                  th:if="${#fields.hasErrors('password')}"></span>
         </div>
 
         <div class="mb-3">
@@ -47,7 +47,6 @@
                    type="password">
             <span class="invalid-feedback" th:errors="*{repeatPassword}"
                   th:if="${#fields.hasErrors('repeatPassword')}"></span>
-            <!--            <span class="invalid-feedback" th:errors="*{global}" th:if="${#fields.hasErrors('global')}"></span>-->
         </div>
 
         <button class="btn btn-outline-primary"
